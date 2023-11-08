@@ -34,7 +34,7 @@ body {
 
 /* content */
 
-.content,
+
 .link {
     text-decoration: none;
 }
@@ -72,7 +72,7 @@ img {
 
 /* header */
 
-.logo {
+.nav__logo {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -87,11 +87,11 @@ img {
     text-decoration: none;
 }
 
-.logo-part {
+.nav__logo-part {
     color: #000000
 }
 
-.nav-link {
+.sait-nav__nav-link {
     position: relative;
 
     display: block;
@@ -113,7 +113,7 @@ img {
 
 /*  Позиціоновані елементи */
 
-.nav-link::after {
+.sait-nav__nav-link--current::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -129,16 +129,16 @@ img {
 
 }
 
-.current.nav-link::after {
+.sait-nav__nav-link--current::after {
     opacity: 1;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.sait-nav__nav-link:hover,
+.sait-nav__nav-link:focus {
     color: var(--accent-color);
 }
 
-.mailto-tel {
+.auth-nav__mailto-tel {
     display: inline-flex;
     align-items: center;
     padding-top: 32px;
@@ -158,22 +158,22 @@ img {
      
 }
 
-.mailto-tel:hover,
-.mailto-tel:focus {
+.auth-nav__mailto-tel:hover,
+.auth-nav__mailto-tel:focus {
     color: var(--accent-color);
 }
 
 /* sprite */
 
-.icon-envelope,
-.icon-smartphone {
+.auth-nav__icon-envelope,
+.auth-nav__icon-smartphone {
     margin-right: 10px;
     fill: currentColor;
 }
 
 
 
-.nav-link.current {
+.sait-nav__nav-link--current {
     color: var(--accent-color);
 }
 
@@ -189,13 +189,13 @@ img {
     margin-left: auto;
 }
 
-.sait-nav .item+.item,
-.auth-nav .item+.item {
+.sait-nav__item:not(:first-child),
+.auth-nav__item:last-child {
     margin-left: 50px;
 }
 
-.main-flex,
-nav {
+.header,
+.nav {
     display: flex;
     align-items: center;
 }
