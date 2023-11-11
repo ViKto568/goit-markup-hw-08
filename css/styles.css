@@ -1042,6 +1042,9 @@ color: #757575;
     /* outline: 2px solid teal; */
 }
 
+
+
+
 /* footer */
 
 .footer {
@@ -1075,7 +1078,11 @@ color: #757575;
     font-style: normal;
 }
 
-.map-link {
+.address__conact {
+    margin-bottom: 8px;
+}
+
+.address__map {
 
     line-height: calc(24/14);
     letter-spacing: 0.03em;
@@ -1088,12 +1095,12 @@ color: #757575;
     
 }
 
-.map-link:hover,
-.map-link:focus {
+.address__map:hover,
+.address__map:focus {
     color: var(--accent-color)
 }
 
-.footer-link {
+.address__link {
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -1105,18 +1112,15 @@ color: #757575;
     
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.address__link:hover,
+.address__link:focus {
     color: var(--accent-color)
 }
 
-.conact {
-    margin-bottom: 8px;
-}
 
 /* come-back */
 
-.come-back-item {
+.come-back__item {
     width: 206px;
     height: 80px;
 
@@ -1125,7 +1129,7 @@ color: #757575;
     align-content: flex-start;
 }
 
-.come-back {
+.come-back__text {
     color: var(--action-white-color);
     font-family: Roboto;
     font-size: 14px;
@@ -1136,7 +1140,13 @@ color: #757575;
     text-transform: uppercase;
 }
 
-.come-back-social {
+.come-social__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.come-back__social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1155,35 +1165,29 @@ color: #757575;
     
 }
 
-.come-back-social:hover,
-.come-back-social:focus {
+.come-back__social:hover,
+.come-back__social:focus {
     fill: var(--action-white-color);
     background-color: var(--accent-color);
 }
 
-.come-social-list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-
-}
 
 /* form-email */
 
-.come-back-email {
+.come-back__email {
     width: 570px;
     height: 86px;
 
     margin-left: 93px;
 }
 
-.form-email {
+.come-back__form-email {
     display: flex;
 
     margin-top: 20px;
 }
 
-.input-email-form {
+.form-email__input {
     width: 358px;
     height: 50px;
 
@@ -1205,7 +1209,7 @@ color: #757575;
 
 
 
-.label-email-btn {
+.form-email__btn {
     position: relative;
 
     display: flex;
@@ -1233,7 +1237,7 @@ color: #757575;
     border: none;
 }
 
-.span-label-email {
+.form-email__span {
     position: absolute;
 
     left: 28px;
@@ -1248,7 +1252,7 @@ color: #757575;
     letter-spacing: 0.96px;
 }
 
-.icon-icon-send {
+.form-email__icon-send {
     position: absolute;
 
     top: 0;
