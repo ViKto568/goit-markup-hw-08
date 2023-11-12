@@ -887,7 +887,20 @@ color: #757575;
 
 /* filter */
 
-.filter-btn {
+/* flex filter  */
+
+.filter__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter__list .filter__item:not(:first-child) {
+    margin-left: 8px;
+}
+
+
+.filter__btn {
     display: block;
     font-weight: 500;
     font-size: 16px;
@@ -910,14 +923,33 @@ color: #757575;
     
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
     background-color: var(--accent-color);
     color: var(--action-white-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.project {
+
+/* project flex */
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+/* project */
+
+.project__meta-img {
+    display: flex;
+    width: 370px;
+    margin: 15px;
+
+    background: var(--action-white-color);
+}
+
+.project__meta {
     position: relative;
     text-decoration: none;
 
@@ -927,20 +959,20 @@ color: #757575;
     
 }
 
-.project:hover,
-.project:focus {
+.project__meta:hover,
+.project__meta:focus {
     position: absolute;
     border: 1px solid #EEE;
     background-color: var(--action-white-color);
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.project-hidden {
+.project__hidden {
     position: relative;
     overflow: hidden;
 }
 
-.project-overlay {
+.project__overlay {
 
     position: absolute;
     top: 0;
@@ -954,14 +986,14 @@ color: #757575;
 
 }
 
-.project:focus .project-overlay,
-.project:hover .project-overlay {
+.project__meta:focus .project__overlay,
+.project__meta:hover .project__overlay {
     transform: translateY(0);
     transition: transform var(--time-animation);
 
 }
 
-.project-description {
+.project__description {
     margin-top: 63px;
     margin-bottom: 63px;
     margin-left: 24px;
@@ -977,8 +1009,18 @@ color: #757575;
     color: var(--action-white-color);
 }
 
+.project__inner {
+    justify-content: flex-start;
 
-.benefits {
+    padding: 24px 20px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    /* outline: 2px solid teal; */
+}
+
+
+.project__benefits {
     margin-top: 0;
     margin-bottom: 4px;
 
@@ -990,7 +1032,7 @@ color: #757575;
     color: var(--secondary-text-color);
 }
 
-.meta {
+.project__more {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -1000,48 +1042,6 @@ color: #757575;
 
     color: var(--praimary-tex-color);
 }
-
-.meta-img {
-    background: var(--action-white-color);
-}
-
-/* flex filter  */
-
-.filter-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.filter-list .item+.item {
-    margin-left: 8px;
-
-}
-
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-}
-
-
-.meta-img {
-    display: flex;
-    width: 370px;
-    margin: 15px;
-}
-
-
-.div {
-    justify-content: flex-start;
-
-    padding: 24px 20px;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    /* outline: 2px solid teal; */
-}
-
 
 
 
@@ -1082,38 +1082,38 @@ color: #757575;
     margin-bottom: 8px;
 }
 
-.address__map {
+.address__link {
 
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-    color: var(--action-white-color);
+    
     text-decoration: none;
+    
+}
+
+.address__link--map {
+    color: var(--action-white-color);
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
-.address__map:hover,
-.address__map:focus {
+.address__link--map:hover,
+.address__link--map:focus {
     color: var(--accent-color)
 }
 
-.address__link {
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
+.address__link--contact {
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
-.address__link:hover,
-.address__link:focus {
+.address__link--contact:hover,
+.address__link--contact:focus {
     color: var(--accent-color)
 }
 
