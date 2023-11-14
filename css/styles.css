@@ -165,8 +165,8 @@ img {
 
 /* sprite */
 
-.auth-nav__icon-envelope,
-.auth-nav__icon-smartphone {
+
+.auth-nav__icon {
     margin-right: 10px;
     fill: currentColor;
 }
@@ -189,12 +189,19 @@ img {
     margin-left: auto;
 }
 
-.sait-nav__item:not(:first-child),
+.sait-nav__item:not(:first-child) {
+    margin-left: 50px;
+}
+
 .auth-nav__item:last-child {
     margin-left: 50px;
 }
 
-.header,
+.header {
+    display: flex;
+    align-items: center;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -601,17 +608,17 @@ color: #757575;
 
 /* flex */
 
-.feature__promo {
+.feature {
     display: flex;
     flex-wrap: wrap;
 }
 
-.feature__promo .feature__item {
+.feature__item {
     width: 270px;
     margin-right: 30px;
 }
 
-.feature__promo .feature__item:nth-child(4n) {
+.feature__item:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -631,7 +638,7 @@ color: #757575;
     background: var(--secondary-bc-color);
 }
 
-.eature__slogan {
+.feature__slogan {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -672,18 +679,18 @@ color: #757575;
 
 /* flex  subtitle*/
 
-.thumbnail__list {
+.thumbnail {
     display: flex;
     flex-wrap: wrap;
 }
 
-.thumbnail__list .thumbnail__item {
+.thumbnail__item {
 
     width: 370px;
     margin-right: 30px;
 }
 
-.thumbnail__list .thumbnail__item:nth-child(3n) {
+.thumbnail__item:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -758,17 +765,17 @@ color: #757575;
 
 /* flex section-subtitle */
 
-.page-thumb__list {
+.page-thumb {
     display: flex;
     flex-wrap: wrap;
 }
 
-.page-thumb__list .page-thumb__item{
+.page-thumb__item{
     width: 270px;
     margin-right: 30px;
 }
 
-.page-thumb__list .page-thumb__item:nth-child(4n) {
+.page-thumb__item:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -790,11 +797,6 @@ color: #757575;
     /* outline: 2px solid teal; */
 }
 
-.userpic__list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
-}
 
 .userpic__author {
     margin-top: 0;
@@ -816,7 +818,11 @@ color: #757575;
     letter-spacing: 0.03em;
 }
 
-
+.userpic__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
 
 /* sprite */
 
@@ -885,6 +891,9 @@ color: #757575;
 
 
 
+
+/* PORTFOLIO */
+
 /* filter */
 
 /* flex filter  */
@@ -895,7 +904,7 @@ color: #757575;
     margin-bottom: 50px;
 }
 
-.filter__list .filter__item:not(:first-child) {
+.filter__item:not(:first-child) {
     margin-left: 8px;
 }
 
