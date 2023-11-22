@@ -111,6 +111,10 @@ img {
     
 }
 
+.sait-nav__nav-link--current {
+    color: var(--accent-color);
+}
+
 /*  Позиціоновані елементи */
 
 .sait-nav__nav-link--current::after {
@@ -172,25 +176,21 @@ img {
 }
 
 
-
-.sait-nav__nav-link--current {
-    color: var(--accent-color);
-}
-
 /* flex nav */
 
-.sait-nav {
+.nav__sait {
     display: flex;
     margin-left: 93px;
 }
 
-.auth-nav {
-    display: flex;
-    margin-left: auto;
-}
 
 .sait-nav__item:not(:first-child) {
     margin-left: 50px;
+}
+
+.nav__auth {
+    display: flex;
+    margin-left: auto;
 }
 
 .auth-nav__item:last-child {
@@ -271,15 +271,11 @@ img {
     border-radius: 4px;
     border: none;
 
-    /* cursor: pointer; */
+    
 }
 
 
-/* .hero-btn:hover,
-.header-btn:focus{
-background-color: #FFFFFF;
-color: #757575;
-} */
+
 
 
 
@@ -761,9 +757,6 @@ color: #757575;
     background-color: var(--secondary-bc-color);
 }
 
-
-
-/* flex section-subtitle */
 
 .page-thumb {
     display: flex;

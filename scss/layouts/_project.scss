@@ -1,0 +1,113 @@
+/* PORTFOLIO */
+
+/* project flex */
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+/* project */
+
+.project__meta-img {
+    display: flex;
+    width: 370px;
+    margin: 15px;
+
+    background: var(--action-white-color);
+}
+
+.project__meta {
+    position: relative;
+    text-decoration: none;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            position: absolute;
+            border: 1px solid #EEE;
+            background-color: var(--action-white-color);
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+            & .project__overlay,
+            & .project__overlay {
+                    transform: translateY(0);
+                    transition: transform var(--time-animation);
+            
+                }
+        }
+    
+}
+
+.project__hidden {
+    position: relative;
+    overflow: hidden;
+}
+
+.project__overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.90);
+    transform: translateY(100%);
+    transition: transform var(--time-animation);
+
+
+}
+
+.project__description {
+    margin-top: 63px;
+    margin-bottom: 63px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    width: 322px;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(28 / 16);
+    letter-spacing: 0.54px;
+    color: var(--action-white-color);
+}
+
+.project__inner {
+    justify-content: flex-start;
+
+    padding: 24px 20px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    /* outline: 2px solid teal; */
+}
+
+
+.project__benefits {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+
+    color: var(--secondary-text-color);
+}
+
+.project__more {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+
+    color: var(--praimary-tex-color);
+}
