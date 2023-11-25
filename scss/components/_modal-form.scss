@@ -181,23 +181,7 @@
 }
 
 .form-polise__btn {
-    width: 200px;
-    height: 50px;
-
-    color: var(--action-white-color);
-
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.96px;
-
-    border-radius: 4px;
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
+    @include btn;
 
     transition: background-color, box-shadow, var(--time-animation);
 

@@ -70,27 +70,9 @@
 
 
 .userpic__social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 44px;
-    height: 44px;
-
-    border-radius: 50%;
-
+    @include social;
+    
     background-color: var(--action-white-color);
-    fill: var(--action-icon-color);
-
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-            fill: var(--action-white-color);
-            background-color: var(--accent-color);
-        }
 
 }
 

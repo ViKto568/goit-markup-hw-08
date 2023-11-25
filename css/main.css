@@ -341,7 +341,7 @@ img {
   line-height: 1.875;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
@@ -776,7 +776,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--action-white-color);
   fill: var(--action-icon-color);
   -webkit-transition-property: background-color, fill;
   transition-property: background-color, fill;
@@ -784,6 +783,7 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--action-white-color);
 }
 .userpic__social:hover, .userpic__social:focus {
   fill: var(--action-white-color);
@@ -1056,14 +1056,14 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--action-white-color);
+  fill: var(--action-icon-color);
   -webkit-transition-property: background-color, fill;
   transition-property: background-color, fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .come-back__social:hover, .come-back__social:focus {
   fill: var(--action-white-color);
@@ -1113,9 +1113,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 12px;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   color: var(--action-white-color);
   text-align: center;
   font-family: Roboto;
