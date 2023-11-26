@@ -341,7 +341,7 @@ img {
   line-height: 1.875;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
@@ -370,7 +370,8 @@ img {
           justify-content: center;
   margin-bottom: 50px;
 }
-.filter__list:not(:first-child) {
+
+.filter__item:not(:first-child) {
   margin-left: 8px;
 }
 
@@ -485,7 +486,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background: var(--accent-color);
-  opacity: 0;
 }
 
 .nav__auth {
@@ -776,7 +776,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--action-icon-color);
   -webkit-transition-property: background-color, fill;
   transition-property: background-color, fill;
   -webkit-transition-duration: 250ms;
@@ -784,6 +783,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--action-white-color);
+  fill: var(--action-icon-color);
 }
 .userpic__social:hover, .userpic__social:focus {
   fill: var(--action-white-color);
@@ -1056,7 +1056,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--action-icon-color);
   -webkit-transition-property: background-color, fill;
   transition-property: background-color, fill;
   -webkit-transition-duration: 250ms;
@@ -1064,6 +1063,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--action-white-color);
 }
 .come-back__social:hover, .come-back__social:focus {
   fill: var(--action-white-color);
@@ -1125,7 +1125,7 @@ img {
   line-height: 1.875;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;

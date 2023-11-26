@@ -62,8 +62,8 @@
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
-    }
+            color: var(--accent-color);
+        }
 
     &--current {
         color: var(--accent-color);
@@ -72,20 +72,20 @@
                 position: absolute;
                 left: 0;
                 bottom: 0;
-            
+        
                 content: '';
-            
+        
                 display: block;
                 width: 100%;
                 height: 4px;
                 border-radius: 2px;
                 background: var(--accent-color);
-                opacity: 0;
-            
             }
         }
 
 }
+
+
 
 .nav__auth {
     display: flex;
