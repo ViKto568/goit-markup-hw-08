@@ -11,12 +11,19 @@ body {
 
 /* Позиціонування */
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
 
-    &:nth-child(3) {
+    @include mq (desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        
+        &:nth-child(3) {
             padding-top: 0;
         }
+    }
 }
 
 .subtitle__title {
