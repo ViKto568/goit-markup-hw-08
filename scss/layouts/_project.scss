@@ -37,10 +37,8 @@
             & .project__overlay {
                     transform: translateY(0);
                     transition: transform var(--time-animation);
-            
                 }
         }
-    
 }
 
 .project__hidden {
@@ -49,7 +47,6 @@
 }
 
 .project__overlay {
-
     position: absolute;
     top: 0;
     left: 0;
@@ -58,8 +55,6 @@
     background: rgba(33, 150, 243, 0.90);
     transform: translateY(100%);
     transition: transform var(--time-animation);
-
-
 }
 
 .project__description {

@@ -23,8 +23,9 @@
   </head>
 
   <body>
-    <!--header-->
-    <!-- <header class="line">
+    <!-- header -->
+
+    <header class="line">
       <div class="container header">
         <nav class="nav">
           <a href="./index.html" class="link logo">Web<span class="logo--dark">Studio</span> </a>
@@ -34,6 +35,61 @@
             <li class="sait-nav__item"><a href="./portfolio.html" class="link sait-nav__nav-link">Портфоліо</a></li>
             <li class="sait-nav__item"><a href="#" class="link sait-nav__nav-link">Контакти</a></li>
           </ul>
+
+          <!-- menu button -->
+          <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icon" width="40" height="40">
+              <use class="icon-menu" href="./images/menu-mobail.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <!-- mobail menu -->
+          
+          <div class="mobai-menu js-menu-container" id="mobile-menu">
+
+            <!-- menu close -->
+            <button type="button" class="menu-close js-close-menu">
+              <svg class="icon" width="40" height="40">
+                <use class="icon-close" href="./images/menu-mobail.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <ul class="list mobail-menu__nav nav-menu">
+              <li class="nav-menu__item">
+                <a href="" class="link nav-menu__link">Студія</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="./portfolio.html" class="link nav-menu__link">Портфоліо</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="" class="link nav-menu__link">Контакти</a>
+              </li>
+            </ul>
+          
+            <ul class="list mobail-menu__contacts menu-contacts">
+              <li class="menu-contacts__item"><a href="tel:+380961111111"
+                 class="link menu-contacts__link">+38 096 111 11 11</a></li>
+              <li class="menu-contacts__item"><a href="mailto:info@devstudio.com"
+                 class="link menu-contacts__link menu-contacts__link--mail">info@devstudio.com</a>
+              </li>
+            </ul>
+          
+            <ul class="list mobail-menu__socials socials-menu">
+              <li class="socials-menu__item">
+                <a href="" class="link socials-menu__link">Instagram</a>
+              </li>
+              <li class="socials-menu__item">
+                <a href="" class="link socials-menu__link">Twitter</a>
+              </li>
+              <li class="socials-menu__item">
+                <a href="" class="link socials-menu__link">Facebook</a>
+              </li>
+              <li class="socials-menu__item">
+                <a href="" class="link socials-menu__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+
         </nav>
 
         <ul class="list nav__auth auth-nav">
@@ -41,8 +97,7 @@
             <a href="mailto:info@devstudio.com" class="link auth-nav__mailto-tel">
               <svg class="auth-nav__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>info@devstudio.com
-            </a>
+              </svg>info@devstudio.com</a>
           </li>
 
           <li class="auth-nav__item">
@@ -53,30 +108,31 @@
           </li>
         </ul>
       </div>
-    </header> -->
+
+    </header>
 
     <main>
       
       <!--hero-->
 
-      <!-- <section class="hero">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero-titel">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button> -->
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
 
           <!-- modal -->
 
-          <!-- <div class="beckdrop is-hidden" data-modal>
+          <div class="beckdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-btn" data-modal-close>
                 <svg class="icon-close-black" width="11" height="11">
                   <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
-              </button> -->
+              </button>
 
               <!-- modal-form -->
 
-              <!-- <b class="form-titel">Залиште свої дані, ми вам передзвонимо</b>
+              <b class="form-titel">Залиште свої дані, ми вам передзвонимо</b>
               <form class="modal-form" name="modal-form" method="post">
 
                 <label class="form-group form-group__item">
@@ -127,7 +183,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!--section feature-->
 
@@ -183,7 +239,7 @@
 
       <!--section subtitle-->
 
-      <section class="section">
+      <section class="section section__subtitle">
         <div class="container">
           <h2 class="subtitle subtitle__title">Чим ми займаємося</h2>
           <ul class="list thumbnail thumbnail">
@@ -217,7 +273,7 @@
 
       <!--section page-->
 
-      <!-- <section class="page section">
+      <section class="page section">
         <div class="container">
           <h2 class="subtitle subtitle__title ">Наша команда</h2>
 
@@ -387,7 +443,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- section clients -->
 
@@ -529,5 +585,6 @@
     </footer> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

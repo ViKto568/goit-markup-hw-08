@@ -16,12 +16,18 @@
     @include mq (desktop) {
         display: flex;
         flex-wrap: wrap;
-             
     }
 }
 
 .feature__item {
-    @include mq (mobile-only) {
+    
+    margin-bottom: 30px;
+
+    &:nth-child(4n) {
+            margin-bottom: 0;
+        } 
+
+    @include mq (mobile) {
         width: 450px;
         margin-bottom: 30px;
 
@@ -50,6 +56,18 @@
 /* sprite */
 
 .feature__color {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+
+    background: var(--secondary-bc-color);
+
     @include mq (mobile-only) {
         display: inline-flex;
         align-items: center;
@@ -62,7 +80,6 @@
         border-radius: 4px;
 
         background: var(--secondary-bc-color);
-
     }
 
     @include mq (tablet-only) {
