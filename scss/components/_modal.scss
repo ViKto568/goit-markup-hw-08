@@ -23,22 +23,59 @@
 
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
+        top: 50%;
+        left: 50%;
 
-    width: 528px;
-    height: 581px;
+        width: 450px;
+        height: 609px;
 
-    padding: 40px;
+        padding: 40px;
 
-    border-radius: 4px;
-    background: var(--action-white-color);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        background: var(--action-white-color);
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-    transition: transform var(--time-animation);
+        transition: transform var(--time-animation);
 
+    @include mq (mobile) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 450px;
+        height: 609px;
+
+        padding: 40px;
+
+        border-radius: 4px;
+        background: var(--action-white-color);
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+        transition: transform var(--time-animation);
+    }
+
+    @include mq (desktop) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 528px;
+        height: 581px;
+
+        padding: 40px;
+
+        border-radius: 4px;
+        background: var(--action-white-color);
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+        transition: transform var(--time-animation);
+    }
 }
 
 .beckdrop.is-hidden .modal {

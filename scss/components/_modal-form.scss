@@ -1,21 +1,64 @@
 /* modal-form */
 
 .form-titel {
-    display: block;
+    @include mq (mobile-only) {
+        display: block;
 
-    width: 448px;
+        width: 370px;
 
-    margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
 
-    text-align: center;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
+        margin-bottom: 12px;
 
-    color: var(--secondary-text-color);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.6px;
+
+        color: var(--secondary-text-color);
+    }
+
+    @include mq (tablet) {
+        display: block;
+
+        width: 370px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-bottom: 12px;
+
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.6px;
+
+        color: var(--secondary-text-color);
+    }
+
+    @include mq (desktop) {
+        display: block;
+        width: 448px;
+
+        margin-bottom: 12px;
+
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+
+        color: var(--secondary-text-color);
+    }
 }
 
 .form-group__item {
@@ -89,7 +132,7 @@
 .form-group__masseage {
     resize: none;
 
-    width: 448px;
+    width: 100%;
     height: 120px;
 
     padding: 16px 12px;
@@ -109,13 +152,25 @@
 }
 
 .form-polise__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mq (mobile) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
 
-    margin-top: -5px;
+        margin-top: -5px;
 
-    margin-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    @include mq (desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: -5px;
+
+        margin-bottom: 30px;
+    }
 }
 
 .form-polise__custom {
@@ -160,24 +215,49 @@
 }
 
 .form-polise__desc {
-    color: var(--praimary-tex-color);
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: calc(24/14);
-    letter-spacing: 0.42px;
+    @include mq (mobile) {
+        color: var(--praimary-tex-color);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.36px;
+    }
+
+    @include mq (desktop) {
+        color: var(--praimary-tex-color);
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: calc(24/14);
+        letter-spacing: 0.42px;
+    }
 }
 
 .form-polise__style {
-    color: var(--accent-color);
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: calc(24/14);
-    letter-spacing: 0.42px;
-    text-decoration-line: underline;
+    @include mq (mobile) {
+        color: var(--accent-color);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.36px;
+        text-decoration-line: underline;
+    }
+
+    @include mq (desktop) {
+        color: var(--accent-color);
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: calc(24/14);
+        letter-spacing: 0.42px;
+        text-decoration-line: underline;
+    }
 }
 
 .form-polise__btn {

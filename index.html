@@ -115,8 +115,8 @@
       
       <!--hero-->
 
-      <section class="hero section">
-        <div class="container">
+      <section >
+        <div class="container hero">
           <h1 class="hero-titel">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
 
@@ -244,27 +244,45 @@
           <h2 class="subtitle subtitle__title">Чим ми займаємося</h2>
           <ul class="list thumbnail thumbnail">
             <li class="thumbnail__item thumbnail__box">
-              <img
-                src="./images/img(4).jpg"
-                alt="Зображення робочего місця веб-розробника"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/4-img.jpg 1x,./images/4-img@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg" />
+                <img
+                  src="./images/4-img.jpg"
+                  alt="Зображення робочего місця веб-розробника"
+                  width="370"
+                  loading="lazy" />
+              </picture>
               <p class="thumbnail__text thumbnail__text--mobile">Десктопні додатки</p>
             </li>
             <li class="thumbnail__item thumbnail__box">
-              <img
-                src="./images/img(5).jpg"
-                alt="Зображення робочого місця з розробкою мобільного інтерфейса"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/5-img.jpg 1x,./images/5-img@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg" />
+                <img src="./images/5-img.jpg"
+                  alt="Зображення робочого місця з розробкою мобільного інтерфейса"
+                  width="370"
+                  loading="lazy" />
+              </picture>
               <p class="thumbnail__text thumbnail__text--desktop">Мобільні додатки</p>
             </li>
             <li class="thumbnail__item thumbnail__box">
-              <img
-                src="./images/img(6).jpg"
-                alt="Зображення робочого місця з розробкою RGB-кольору"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/6-img.jpg 1x,./images/6-img@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                  loading="lazy" />
+                <img 
+                  src="./images/6-img.jpg"
+                  alt="Зображення робочого місця з розробкою RGB-кольору"
+                  width="370"
+                  loading="lazy" />
+              </picture>
               <p class="thumbnail__text thumbnail__text--design">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -275,42 +293,58 @@
 
       <section class="page section">
         <div class="container">
-          <h2 class="subtitle subtitle__title ">Наша команда</h2>
+          <h2 class="subtitle subtitle__title">Наша команда</h2>
 
           <ul class="list page-thumb">
-            <li class="page-thumb__img page-thumb__item">
-              <img
-                src="./images/img.jpg"
-                alt="photo Ігорь Дем'яненко Product Designer"
-                width="270"
-              />
+            <li class="page-thumb__meta page-thumb__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img-desk.jpg 1x,./images/img-desk@2x.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/img-tab.jpg 1x,./images/img-tab@2x.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 768px)" 
+                  srcset="./images/img-mob.jpg 1x,./images/img-mob@2x.jpg 2x" 
+                  type="image/jpg" />
+                <img 
+                  class="page-thumb__img"
+                  src="./images/img.jpg"
+                  alt="photo Ігорь Дем'яненко Product Designer"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="page-thumb__userpic  userpic">
                 <h3 class="userpic__author">Ігорь Дем'яненко</h3>
                 <p class="userpic__preview">Product Designer</p>
 
                 <ul class="list userpic__list">
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -321,39 +355,54 @@
               </div>
             </li>
 
-            <li class="page-thumb__img page-thumb__item">
-              <img
-                src="./images/img(1).jpg"
-                alt="photo Ольга Рєпіна Frontend Developer"
-                width="270"
-              />
+            <li class="page-thumb__meta page-thumb__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/1-img-desk.jpg 1x,./images/1-img-desk@2x.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/1-img-tab.jpg 1x,./images/1-img-tab@2x.jpg 2x"
+                  type="image/jpg" />
+                <source media="(max-width: 768px)"
+                  srcset="./images/1-img-mob.jpg 1x,./images/1-img-mob@2x.jpg 2x" 
+                  type="image/jpg" />
+                <img 
+                  class="page-thumb__img"
+                  src="./images/1-img-mob.jpg"
+                  alt="photo Ольга Рєпіна Frontend Developer"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="page-thumb__userpic  userpic">
                 <h3 class="userpic__author">Ольга Рєпіна</h3>
                 <p class="userpic__preview">Frontend Developer</p>
 
                 <ul class="list userpic__list">
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -364,35 +413,55 @@
               </div>
             </li>
 
-            <li class="page-thumb__img page-thumb__item">
-              <img src="./images/img(2).jpg" alt="photo Микола Тарасов Marketing" width="270" />
+            <li class="page-thumb__meta page-thumb__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/2-img-desk.jpg 1x,./images/2-img-desk@2x.jpg 2x"
+                  type="image/jpg" />
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./images/2-img-tab.jpg 1x,./images/2-img-tab@2x.jpg 2x" 
+                  type="image/jpg" />
+                <source 
+                  media="(max-width: 768px)" 
+                  srcset="./images/2-img-mob.jpg 1x,./images/2-img-mob@2x.jpg 2x" 
+                  type="image/jpg" />
+                <img 
+                  class="page-thumb__img" 
+                  src="./images/2-img-mob.jpg"
+                  alt="photo Микола Тарасов Marketing" 
+                  width="450"
+                  loading="lazy" />
+              </picture>
+              
               <div class="page-thumb__userpic  userpic">
                 <h3 class="userpic__author">Микола Тарасов</h3>
                 <p class="userpic__preview">Marketing</p>
 
                 <ul class="list userpic__list">
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -403,35 +472,55 @@
               </div>
             </li>
 
-            <li class="page-thumb__img page-thumb__item">
-              <img src="./images/img(3).jpg" alt="photo Михайло Єрмаков UI Designer" width="270" />
+            <li class="page-thumb__meta page-thumb__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/3-img-desk.jpg 1x,./images/3-img-desk@2x.jpg 2x"
+                  type="image/jpg" />
+                <source 
+                  media="(min-width: 768px)"
+                  srcset="./images/3-img-tab.jpg 1x,./images/3-img-tab@2x.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/3-img-mob.jpg 1x,./images/3-img-mob@2x.jpg 2x"
+                  type="image/jpg" />
+                <img 
+                  class="page-thumb__img" 
+                  src="./images/3-img-mob.jpg" 
+                  alt="photo Михайло Єрмаков UI Designer" 
+                  width="450"
+                  loading="lazy" />
+              </picture>
+              
               <div class="page-thumb__userpic  userpic">
                 <h3 class="userpic__author">Михайло Єрмаков</h3>
                 <p class="userpic__preview">UI Designer</p>
 
                 <ul class="list userpic__list">
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="userpic__item">
                     <a class="userpic__social" href="">
                       <svg class="userpic__social-links" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -447,47 +536,47 @@
 
       <!-- section clients -->
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="subtitle subtitle__title">Постійні клієнти</h2>
 
           <ul class="list clients">
-            <li>
+            <li class="clients__item">
               <a class="clients__icon" href="">
                 <svg class="icon-Logo1" width="106" height="60">
                   <use href="images/sprite.svg#icon-Logo1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__icon" href="">
                 <svg class="icon-Logo2" width="106" height="60">
                   <use href="images/sprite.svg#icon-Logo2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__icon" href="">
                 <svg class="icon-Logo3" width="106" height="60">
                   <use href="images/sprite.svg#icon-Logo3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__icon" href="">
                 <svg class="icon-Logo4" width="106" height="60">
                   <use href="images/sprite.svg#icon-Logo4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__icon" href="">
                 <svg class="icon-Logo5" width="106" height="60">
                   <use href="images/sprite.svg#icon-Logo5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__icon" href="">
                 <svg class="icon-Logo6" width="106" height="60">
                   <use href="images/sprite.svg#icon-Logo6"></use>
@@ -496,81 +585,86 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!--footer-->
 
-    <!-- <footer class="footer">
-      <div class="container footer-container">
-        <div class="container-address">
-          <a href="./index.html" class="link logo logo__link">
-            Web<span class="logo--white">Studio</span></a>
-          <address class="address">
-            <ul class="list">
-              <li class="address__conact">
-                <a
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link address__link address__link--map">
-                  г. Київ, пр-т Леси Українки, 26
-                </a>
-              </li>
-              <li class="address__conact">
-                <a href="mailto:info@devstudio.com" class="link address__link address__link--contact">info@devstudio.com</a>
-              </li>
-              <li>
-                <a href="tel:+380961111111" class="link address__link address__link--contact">+38 (096) 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div> -->
-
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="container-footer">
+          <div class="container-address">
+            <a href="./index.html" class="link logo logo__link">
+              Web<span class="logo--white">Studio</span></a>
+            <address class="address">
+              <ul class="list address__list">
+                <li class="address__conact">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link address__link address__link--map">
+                    г. Київ, пр-т Леси Українки, 26
+                  </a>
+                </li>
+                <li class="address__conact">
+                  <a href="mailto:info@devstudio.com" class="link address__link address__link--contact">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="link address__link address__link--contact">+38 (096) 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        
         <!-- come-back -->
 
-        <!-- <div class="come-back come-back__item">
-          <b class="come-back__text">приєднуйтесь</b>
+          <div class="come-back come-back__item">
+            <b class="come-back__text">приєднуйтесь</b>
 
-          <ul class="list come-social__list">
-            <li>
-              <a class="come-back__social" href="">
-                <svg class="come-social-links" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="come-back__social" href="">
-                <svg class="come-social-links" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="come-back__social" href="">
-                <svg class="come-social-links" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="come-back__social" href="">
-                <svg class="come-social-links" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div> -->
+            <ul class="list come-social__list">
+              <li>
+                <a class="come-back__social" href="">
+                  <svg class="come-social-links" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="come-back__social" href="">
+                  <svg class="come-social-links" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="come-back__social" href="">
+                  <svg class="come-social-links" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="come-back__social" href="">
+                  <svg class="come-social-links" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <!-- form-email -->
         
-        <!-- <div class="come-back__email">
+        <div class="come-back__email">
           <b class="come-back__text">Підпишіться на розсилку</b>
           <form class="come-back__form-email form-email" name="form-email" method="post">
             
-              <input class="form-email__input" type="email" name="input-email" id="input-email" placeholder="E-mail">
+            <input class="form-email__input"
+              type="email" name="input-email"
+              id="input-email" 
+              placeholder="E-mail">
             
             <button type="submit" class="form-email__btn">
               <b class="form-email__span">Підписатися</b>
@@ -582,7 +676,7 @@
         </div>
         
       </div>
-    </footer> -->
+    </footer>
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

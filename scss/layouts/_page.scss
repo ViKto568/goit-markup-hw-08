@@ -8,15 +8,43 @@
 .page-thumb {
     display: flex;
     flex-wrap: wrap;
+
+     @include mq (tablet-only) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;    
+    }
+
+    @include mq (desktop) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.page-thumb__meta {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--action-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .page-thumb__item {
+    width: 480px;
+
     @include mq (mobile-only) {
-        width: 450px;
+        width: 480px;
+        margin-bottom: 30px;
 
         &:nth-child(4n) {
-                margin-right: 0;
+                margin-bottom: 0;
             }
+    }
+
+    @include mq (tablet-only) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
     }
      
     @include mq (desktop) {
@@ -29,23 +57,47 @@
     }
 }
 
-
-
 .page-thumb__img {
-    display: flex;
-    flex-direction: column;
+    width: 450px;
 
-    background-color: var(--action-white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    @include mq (mobile-only) {
+        width: 450px;
+    }
+    
+    @include mq (tablet) {
+        width: 354px;
+    }
+
+    @include mq (desktop) {
+        width: 270px;
+    }
+
 }
 
 .page-thumb__userpic {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 32px;
-    padding-left: 32px;
+    @include mq (mobile-only) {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 24px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    @include mq (tablet) {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 24px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    @include mq (desktop) {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
     /* outline: 2px solid teal; */
 }
 
@@ -70,20 +122,30 @@
     letter-spacing: 0.03em;
 }
 
-.userpic__list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
-}
-
 /* sprite */
 
+.userpic__list {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    
+    @include mq (desktop) {
+        justify-content: space-between;
+    }
+}
+
+.userpic__item {
+    margin-right: 10px;
+
+        &:nth-child(4n) {
+                margin-right: 0;
+            }
+}
 
 .userpic__social {
     @include social;
     
     background-color: var(--action-white-color);
     fill: var(--action-icon-color);
-
 }
 

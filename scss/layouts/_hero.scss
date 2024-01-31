@@ -1,5 +1,6 @@
 /* hero */
 .hero {
+    @include mq (mobile-only) {
     display: block;
     text-align: center;
     padding-top: 118px;
@@ -14,10 +15,20 @@
         linear-gradient(to right,
             rgba(47, 48, 58, 0.40),
             rgba(2, 2, 61, 0.4)),
-        url(../images/img\(16\).jpg);
+        url(../images/header-mob-img.jpg);
+
+        @include mq (retina) {
+            background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.40),
+                rgba(2, 2, 61, 0.4)),
+            url(../images/header-mob-img@2x.jpg);
+        }
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    }
 
     @include mq (tablet) {
         display: block;
@@ -34,10 +45,15 @@
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.40),
                 rgba(2, 2, 61, 0.4)),
-            url(../images/img\(16\).jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+            url(../images/header-tab-img.jpg);
+
+            @include mq (retina) {
+            background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.40),
+                rgba(2, 2, 61, 0.4)),
+            url(../images/header-tab-img@2x.jpg);
+        }
     }
 
     @include mq (desktop) {
@@ -55,14 +71,20 @@
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.40),
                 rgba(2, 2, 61, 0.4)),
-            url(../images/img\(16\).jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+            url(../images/header-desk.jpg);
+
+            @include mq (retina) {
+            background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.40),
+                rgba(2, 2, 61, 0.4)),
+            url(../images/header-desk@2x.jpg);
+        }
     }
 }
 
 .hero-titel {
+    @include mq (mobile-only) {
         width: 360px;
 
         margin-left: auto;
@@ -73,10 +95,30 @@
 
         font-weight: 900;
         font-size: 26px;
-        line-height: calc(60 / 44);
+        line-height: 1.62;
+        letter-spacing: 1.56px;
+        text-transform: uppercase;
 
         color: var(--action-white-color);
+    }
 
+        @include mq (tablet) {
+        width: 360px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 1.56px;
+        text-transform: uppercase;
+
+        color: var(--action-white-color);
+    }
 
     @include mq (desktop) {
     
@@ -91,6 +133,8 @@
         font-weight: 900;
         font-size: 44px;
         line-height: calc(60 / 44);
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
 
         color: var(--action-white-color);
     }

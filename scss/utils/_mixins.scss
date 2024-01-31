@@ -40,9 +40,13 @@
         }
     }
 
+    @if $type == 'retina' {
+        @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx) {
+            @content;
+        }
+    }
+
 }
-
-
 
 @mixin btn {
     width: 200px;
@@ -83,8 +87,4 @@
             fill: var(--action-white-color);
             background-color: var(--accent-color);
         }
-    
-     
-    
-
 }

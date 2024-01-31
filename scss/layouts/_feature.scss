@@ -3,7 +3,6 @@
 /* flex */
 
 .feature {
-     
     display: flex;
     flex-wrap: wrap;
 
@@ -20,8 +19,7 @@
 }
 
 .feature__item {
-    
-    margin-bottom: 30px;
+    flex-wrap: wrap;
 
     &:nth-child(4n) {
             margin-bottom: 0;
