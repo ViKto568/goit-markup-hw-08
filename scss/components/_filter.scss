@@ -5,13 +5,36 @@
 /* flex filter  */
 
 .filter__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    @include mq (mobile-only) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-bottom: 50px;
+        width: 320px;
+        height: 90px;
+    }
+
+    @include mq (tablet) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+@include mq (mobile-only) {
+    .filter__item:not(:nth-child(3n + 1)) {
+        margin-left: 8px;
+    }
+
+    .filter__item:nth-child(-n + 3) {
+        padding-bottom: 15px;
+    }
 }
 
 .filter__item:not(:first-child) {
-    margin-left: 8px;
+    @include mq (tablet) {
+        margin-left: 8px;
+    }
 }
 
 .filter__btn {

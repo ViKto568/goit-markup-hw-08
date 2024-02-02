@@ -30,7 +30,7 @@
     background-size: cover;
     }
 
-    @include mq (tablet) {
+    @include mq (tablet-only) {
         display: block;
         text-align: center;
         padding-top: 118px;

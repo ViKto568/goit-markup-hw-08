@@ -1,13 +1,15 @@
 /* section page */
 
 .page {
-    background-color: var(--secondary-bc-color);
+    background-color: var(--secondary-bc-color);   
 }
 
 
 .page-thumb {
-    display: flex;
-    flex-wrap: wrap;
+    @include mq (mobile-only) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
      @include mq (tablet-only) {
         display: flex;
@@ -31,8 +33,6 @@
 }
 
 .page-thumb__item {
-    width: 480px;
-
     @include mq (mobile-only) {
         width: 480px;
         margin-bottom: 30px;
@@ -58,8 +58,6 @@
 }
 
 .page-thumb__img {
-    width: 450px;
-
     @include mq (mobile-only) {
         width: 450px;
     }
@@ -71,7 +69,6 @@
     @include mq (desktop) {
         width: 270px;
     }
-
 }
 
 .page-thumb__userpic {

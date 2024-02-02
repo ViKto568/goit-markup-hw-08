@@ -7,6 +7,7 @@
         align-items: center;
         justify-content: space-between;
         width: 480px;
+        z-index: 10;
     }
 
     @include mq (tablet) {

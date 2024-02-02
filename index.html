@@ -56,7 +56,7 @@
 
             <ul class="list mobail-menu__nav nav-menu">
               <li class="nav-menu__item">
-                <a href="" class="link nav-menu__link">Студія</a>
+                <a href="./index.html" class="link nav-menu__link">Студія</a>
               </li>
               <li class="nav-menu__item">
                 <a href="./portfolio.html" class="link nav-menu__link">Портфоліо</a>
@@ -108,7 +108,6 @@
           </li>
         </ul>
       </div>
-
     </header>
 
     <main>
@@ -275,8 +274,7 @@
                 <source
                   srcset="./images/6-img.jpg 1x,./images/6-img@2x.jpg 2x"
                   media="(min-width: 1200px)"
-                  type="image/jpg"
-                  loading="lazy" />
+                  type="image/jpg" />
                 <img 
                   src="./images/6-img.jpg"
                   alt="Зображення робочого місця з розробкою RGB-кольору"
@@ -291,8 +289,8 @@
 
       <!--section page-->
 
-      <section class="page section">
-        <div class="container">
+      <section class="page section container">
+        <div  >
           <h2 class="subtitle subtitle__title">Наша команда</h2>
 
           <ul class="list page-thumb">
@@ -312,7 +310,7 @@
                   type="image/jpg" />
                 <img 
                   class="page-thumb__img"
-                  src="./images/img.jpg"
+                  src="./images/img-mob.jpg"
                   alt="photo Ігорь Дем'яненко Product Designer"
                   width="450"
                   loading="lazy"
@@ -608,16 +606,20 @@
                   </a>
                 </li>
                 <li class="address__conact">
-                  <a href="mailto:info@devstudio.com" class="link address__link address__link--contact">info@devstudio.com</a>
+                  <a 
+                    href="mailto:info@devstudio.com" 
+                    class="link address__link address__link--contact">info@devstudio.com</a>
                 </li>
                 <li>
-                  <a href="tel:+380961111111" class="link address__link address__link--contact">+38 (096) 111 11 11</a>
+                  <a 
+                    href="tel:+380961111111" 
+                    class="link address__link address__link--contact">+38 (096) 111 11 11</a>
                 </li>
               </ul>
             </address>
           </div>
         
-        <!-- come-back -->
+         <!-- come-back -->
 
           <div class="come-back come-back__item">
             <b class="come-back__text">приєднуйтесь</b>
@@ -659,10 +661,15 @@
         
         <div class="come-back__email">
           <b class="come-back__text">Підпишіться на розсилку</b>
-          <form class="come-back__form-email form-email" name="form-email" method="post">
+          <form 
+            class="come-back__form-email form-email" 
+            name="form-email" 
+            method="post">
             
-            <input class="form-email__input"
-              type="email" name="input-email"
+            <input 
+              class="form-email__input"
+              type="email" 
+              name="input-email"
               id="input-email" 
               placeholder="E-mail">
             

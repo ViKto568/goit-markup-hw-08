@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--header-->
-    <header class="line header-desk">
+    <header class="line">
       <div class="container header">
         <nav class="nav">
           <a href="./index.html" class="link logo">Web<span class="logo--dark">Studio</span> </a>
@@ -31,6 +31,61 @@
               <a href="./portfolio.html" class="link sait-nav__nav-link sait-nav__nav-link--current">Портфоліо</a></li>
             <li class="sait-nav__item"><a href="#" class="link sait-nav__nav-link">Контакти</a></li>
           </ul>
+
+          <!-- menu button -->
+          <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icon" width="40" height="40">
+              <use class="icon-menu" href="./images/menu-mobail.svg#icon-menu"></use>
+            </svg>
+          </button>
+          
+          <!-- mobail menu -->
+          
+          <div class="mobai-menu js-menu-container" id="mobile-menu">
+          
+            <!-- menu close -->
+            <button type="button" class="menu-close js-close-menu">
+              <svg class="icon" width="40" height="40">
+                <use class="icon-close" href="./images/menu-mobail.svg#icon-close"></use>
+              </svg>
+            </button>
+          
+            <ul class="list mobail-menu__nav nav-menu">
+              <li class="nav-menu__item">
+                <a href="./index.html" class="link nav-menu__link">Студія</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="./portfolio.html" class="link nav-menu__link">Портфоліо</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="" class="link nav-menu__link">Контакти</a>
+              </li>
+            </ul>
+          
+            <ul class="list mobail-menu__contacts menu-contacts">
+              <li class="menu-contacts__item"><a href="tel:+380961111111" class="link menu-contacts__link">+38 096 111 11 11</a>
+              </li>
+              <li class="menu-contacts__item"><a href="mailto:info@devstudio.com"
+                  class="link menu-contacts__link menu-contacts__link--mail">info@devstudio.com</a>
+              </li>
+            </ul>
+          
+            <ul class="list mobail-menu__socials socials-menu">
+              <li class="socials-menu__item">
+                <a href="" class="link socials-menu__link">Instagram</a>
+              </li>
+              <li class="socials-menu__item">
+                <a href="" class="link socials-menu__link">Twitter</a>
+              </li>
+              <li class="socials-menu__item">
+                <a href="" class="link socials-menu__link">Facebook</a>
+              </li>
+              <li class="socials-menu__item">
+                <a href="" class="link socials-menu__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          
         </nav>
     
         <ul class="list nav__auth auth-nav">
@@ -68,10 +123,27 @@
         <ul class="list project__list">
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(7).jpg" alt="Фото MacBook Pro" width="370" />
-                
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)"
+                    srcset="./images/7-img-desk.jpg 1x,./images/7-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/7-img-tab.jpg 1x,./images/7-img-tab@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source 
+                    media="(max-width: 768px)"
+                    srcset="./images/7-img-mob.jpg 1x,./images/7-img-mob@2x.jpg 2x"
+                    type="image/jpg" />
+                  <img
+                    class="project__img"
+                    src="./images/7-img-mob.jpg"
+                    alt="Фото MacBook Pror"
+                    width="450"
+                    loading="lazy" />
+                </picture>
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні 
                     пропозиції з різним рівнем функціоналу та сервісів. 
@@ -89,10 +161,28 @@
 
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(8).jpg" alt="фото з баскетболістами" width="370" />
-
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/8-img-desk.jpg 1x,./images/8-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/8-img-tab.jpg 1x,./images/8-img-tab@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./images/8-img-mob.jpg 1x,./images/8-img-mob@2x.jpg 2x"
+                    type="image/jpg" />
+                  <img 
+                    class="project__img"
+                    src="./images/8-img-mob.jpg"
+                    alt="фото з баскетболістами"
+                    width="450"
+                    loading="lazy" />
+                </picture>
+                
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні
                     пропозиції з різним рівнем функціоналу та сервісів.
@@ -110,9 +200,27 @@
 
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(9).jpg" alt="фото з логотипом ресторану Seafood" width="370" />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/9-img-desk.jpg 1x,./images/9-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/9-img-tab.jpg 1x,./images/9-img-tab@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <source 
+                    media="(max-width: 768px)" 
+                    srcset="./images/9-img-mob.jpg 1x,./images/9-img-mob@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <img 
+                    class="project__img" 
+                    src="./images/9-img-mob.jpg" 
+                    alt="фото з логотипом ресторану Seafood" 
+                    width="450" 
+                    loading="lazy" />
+                </picture>
 
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні
@@ -131,9 +239,26 @@
 
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(10).jpg" alt="фото навушнкив" width="370" />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/10-img-desk.jpg 1x,./images/10-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/10-img-tab.jpg 1x,./images/10-img-tab@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <source media="(max-width: 768px)" 
+                    srcset="./images/10-img-mob.jpg 1x,./images/10-img-mob@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <img 
+                    class="project__img" 
+                    src="./images/10-img-mob.jpg" 
+                    alt="фото навушнкив" 
+                    width="450" 
+                    loading="lazy" />
+                </picture>
 
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні
@@ -151,9 +276,27 @@
           </li>
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(11).jpg" alt="фото коробочек" width="370" />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/11-img-desk.jpg 1x,./images/11-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/11-img-tab.jpg 1x,./images/11-img-tab@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <source 
+                    media="(max-width: 768px)" 
+                    srcset="./images/11-img-mob.jpg 1x,./images/11-img-mob@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <img 
+                    class="project__img" 
+                    src="./images/11-img-mob.jpg" 
+                    alt="фото коробочек" 
+                    width="450" 
+                    loading="lazy" />
+                </picture>
 
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні
@@ -171,9 +314,26 @@
           </li>
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(12).jpg" alt="фото монітора" width="370" />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/12-img-desk.jpg 1x,./images/12-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/12-img-tab.jpg 1x,./images/12-img-tab@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <source media="(max-width: 768px)" 
+                    srcset="./images/12-img-mob.jpg 1x,./images/12-img-mob@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <img 
+                    class="project__img" 
+                    src="./images/12-img-mob.jpg" 
+                    alt="фото монітора" 
+                    width="450" 
+                    loading="lazy" />
+                </picture>
 
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні
@@ -191,9 +351,27 @@
           </li>
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(13).jpg" alt="фото відкритой книги" width="370" />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/13-img-desk.jpg 1x,./images/13-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/13-img-tab.jpg 1x,./images/13-img-tab@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <source 
+                    media="(max-width: 768px)" 
+                    srcset="./images/13-img-mob.jpg 1x,./images/13-img-mob@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <img 
+                    class="project__img" 
+                    src="./images/13-img-mob.jpg" 
+                    alt="фото відкритой книги" 
+                    width="450" 
+                    loading="lazy" />
+                </picture>
 
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні
@@ -211,9 +389,27 @@
           </li>
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(14).jpg" alt="фото бірки" width="370" />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/14-img-desk.jpg 1x,./images/14-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/14-img-tab.jpg 1x,./images/14-img-tab@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <source 
+                    media="(max-width: 768px)" 
+                    srcset="./images/14-img-mob.jpg 1x,./images/14-img-mob@2x.jpg 2x" 
+                    type="image/jpg" />
+                  <img 
+                    class="project__img" 
+                    src="./images/14-img-mob.jpg" 
+                    alt="фото бірки" 
+                    width="450" 
+                    loading="lazy" />
+                </picture>
 
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні
@@ -231,9 +427,25 @@
           </li>
           <li class="project__meta-img">
             <a href="#" class="project__meta">
-
               <div class="project__hidden">
-                <img src="./images/img(15).jpg" alt="фото відкритого ноутбука" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/15-img-desk.jpg 1x,./images/15-img-desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/15-img-tab.jpg 1x,./images/15-img-tab@2x.jpg 2x"
+                    type="image/jpg" />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./images/15-img-mob.jpg 1x,./images/15-img-mob@2x.jpg 2x"
+                    type="image/jpg" />
+                  <img class="project__img" 
+                    src="./images/15-img-mob.jpg" 
+                    alt="Фото відкритого ноутбука" 
+                    width="450" loading="lazy" />
+                </picture>
 
                 <div class="project__overlay">
                   <p class="project__description">Ресурс пропонує комплексні
@@ -256,73 +468,89 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="container-address">
-          <a href="./index.html" class="link logo logo__link">
-            Web<span class="logo--white">Studio</span></a>
-          <address class="address">
-            <ul class="list">
-              <li class="address__conact">
-                <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" 
-                target="_blank" 
-                rel="noopener noreferrer nofollow"
-                class="link address__link address__link--map">
-                  г. Київ, пр-т Леси Українки, 26
+        <div class="container-footer">
+          <div class="container-address">
+            <a href="./index.html" class="link logo logo__link">
+              Web<span class="logo--white">Studio</span></a>
+            <address class="address">
+              <ul class="list address__list">
+                <li class="address__conact">
+                  <a 
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" 
+                    target="_blank" 
+                    rel="noopener noreferrer nofollow"
+                    class="link address__link address__link--map">
+                    г. Київ, пр-т Леси Українки, 26
+                  </a>
+                </li>
+                <li class="address__conact">
+                  <a 
+                    href="mailto:info@devstudio.com" 
+                    class="link address__link address__link--contact">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a 
+                    href="tel:+380961111111" 
+                    class="link address__link address__link--contact">+38 (096) 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          
+          <!-- come-back -->
+          
+          <div class="come-back come-back__item">
+            <b class="come-back__text">приєднуйтесь</b>
+          
+            <ul class="list come-social__list">
+              <li>
+                <a class="come-back__social" href="">
+                  <svg class="come-social-links" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address__conact">
-                <a href="mailto:info@devstudio.com" class="link address__link address__link--contact">info@devstudio.com</a>
+              <li>
+                <a class="come-back__social" href="">
+                  <svg class="come-social-links" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="tel:+380961111111" class="link address__link address__link--contact">+38 (096) 111 11 11</a>
+                <a class="come-back__social" href="">
+                  <svg class="come-social-links" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="come-back__social" href="">
+                  <svg class="come-social-links" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-    
-        <!-- come-back -->
-    
-        <div class="come-back come-back__item">
-          <b class="come-back__text">приєднуйтесь</b>
-    
-          <ul class="list come-social__list">
-            <li>
-              <a class="come-back__social" href="">
-                <svg class="come-social-links" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="come-back__social" href="">
-                <svg class="come-social-links" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="come-back__social" href="">
-                <svg class="come-social-links" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="come-back__social" href="">
-                <svg class="come-social-links" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        
     
         <!-- form-email -->
     
         <div class="come-back__email">
           <b class="come-back__text">Підпишіться на розсилку</b>
-          <form class="come-back__form-email form-email" name="form-email" method="post">
+          <form 
+            class="come-back__form-email form-email" 
+            name="form-email" 
+            method="post">
     
-            <input class="form-email__input" type="email" name="input-email" id="input-email" placeholder="E-mail">
+            <input 
+              class="form-email__input" 
+              type="email" 
+              name="input-email" 
+              id="input-email" 
+              placeholder="E-mail">
     
             <button type="submit" class="form-email__btn">
               <b class="form-email__span">Підписатися</b>
@@ -335,5 +563,6 @@
     
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

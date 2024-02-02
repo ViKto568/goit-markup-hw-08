@@ -197,7 +197,7 @@
         text-transform: uppercase;
     }
 
-    @include mq (tablet) {
+    @include mq (tablet-only) {
         display: block;
         margin-bottom: 20px;
 

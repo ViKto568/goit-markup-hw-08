@@ -22,7 +22,8 @@
 
 
 .modal {
-    position: absolute;
+    @include mq (mobile-only) {
+        position: absolute;
         top: 50%;
         left: 50%;
 
@@ -38,8 +39,9 @@
             0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
         transition: transform var(--time-animation);
+    }
 
-    @include mq (mobile) {
+    @include mq (tablet-only) {
         position: absolute;
         top: 50%;
         left: 50%;
