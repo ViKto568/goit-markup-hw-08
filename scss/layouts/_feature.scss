@@ -19,13 +19,8 @@
 }
 
 .feature__item {
-    flex-wrap: wrap;
-
-    &:nth-child(4n) {
-            margin-bottom: 0;
-        } 
-
-    @include mq (mobile) {
+    @include mq (mobile-only) {
+        display: block;
         width: 450px;
         margin-bottom: 30px;
 
@@ -35,6 +30,8 @@
     }
 
     @include mq (tablet-only) {
+        display: flex;
+        flex-wrap: wrap;
         width: calc((100% - 4 * 15px) / 2);
         margin: 15px;
     }

@@ -147,6 +147,7 @@
         margin-right: 24px;
 
         width: 306px;
+        height: 168px;
 
         font-family: Roboto;
         font-size: 18px;
@@ -174,28 +175,81 @@
 }
 
 .project__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include mq (mobile-only) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
 
-    padding: 24px 20px;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
+        padding: 20px 24px;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+    }
+
+    @include mq (tablet-only) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        height: 146px;
+
+        padding: 20px 24px;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+    }
+
+    @include mq (desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        padding: 20px 24px;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+    }
     /* outline: 2px solid teal; */
 }
 
 
 .project__benefits {
-    margin-top: 0;
-    margin-bottom: 4px;
+    @include mq (mobile-only) {
+        margin-top: 0;
+        margin-bottom: 4px;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36 / 18);
-    letter-spacing: 0.06em;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: calc(36 / 18);
+        letter-spacing: 0.06em;
 
-    color: var(--secondary-text-color);
+        color: var(--secondary-text-color);
+    }
+
+    @include mq (tablet-only) {
+        width: 306px;
+        margin-top: 0;
+        margin-bottom: 4px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: calc(36 / 18);
+        letter-spacing: 0.06em;
+
+        color: var(--secondary-text-color);
+    }
+
+    @include mq (desktop) {
+        margin-top: 0;
+        margin-bottom: 4px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: calc(36 / 18);
+        letter-spacing: 0.06em;
+
+        color: var(--secondary-text-color);
+    }
 }
 
 .project__more {

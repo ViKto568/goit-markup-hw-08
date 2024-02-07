@@ -1,9 +1,14 @@
 /* section page */
 
 .page {
-    background-color: var(--secondary-bc-color);   
+    background-color: var(--secondary-bc-color);
+    display: block;
+    text-align: center;
+    min-width: 480px;
+    
+    margin-left: auto;
+    margin-right: auto;   
 }
-
 
 .page-thumb {
     @include mq (mobile-only) {

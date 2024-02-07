@@ -3,7 +3,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 480px;
+        min-width: 480px;
         height: 796px;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -71,11 +71,20 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+        &--current {
+            color: var(--accent-color);
+            font-family: Roboto;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.8px;
+        }
+
     &:hover,
     &:focus {
             color: var(--accent-color);
         }
-
 }
 
 .mobail-menu__contacts {
