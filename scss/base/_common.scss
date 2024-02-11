@@ -28,8 +28,6 @@ body {
 .subtitle__title {
     @include mq (mobile-only) {
         display: block;
-
-        min-width: 480px;
     
         margin-left: auto;
         margin-right: auto;
@@ -43,7 +41,6 @@ body {
 
         color: var(--secondary-text-color);
         text-align: center;
-        z-index: 1;
     }
 
     @include mq (tablet) {

@@ -4,7 +4,8 @@
 
 .project__list {
     @include mq (mobile-only) {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     @include mq (tablet) {
@@ -191,8 +192,6 @@
         flex-direction: column;
         justify-content: flex-start;
 
-        height: 146px;
-
         padding: 20px 24px;
         border-right: 1px solid #EEEEEE;
         border-bottom: 1px solid #EEEEEE;
@@ -227,6 +226,8 @@
     }
 
     @include mq (tablet-only) {
+        flex-grow: 1;
+        flex-basis: 72px;
         width: 306px;
         margin-top: 0;
         margin-bottom: 4px;

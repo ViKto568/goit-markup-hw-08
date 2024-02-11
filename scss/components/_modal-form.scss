@@ -152,10 +152,21 @@
 }
 
 .form-polise__item {
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        min-width: 480px;
+
+        margin-top: -5px;
+
+        margin-bottom: 30px;
+
     @include mq (mobile) {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        
 
         margin-top: -5px;
 
@@ -215,6 +226,15 @@
 }
 
 .form-polise__desc {
+        color: var(--praimary-tex-color);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.36px;
+        text-align: center;
+
     @include mq (mobile) {
         color: var(--praimary-tex-color);
         font-family: Roboto;
@@ -237,6 +257,18 @@
 }
 
 .form-polise__style {
+        color: var(--accent-color);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.36px;
+        text-decoration-line: underline;
+        text-align: center;
+        min-width: 480px;
+
+
     @include mq (mobile) {
         color: var(--accent-color);
         font-family: Roboto;

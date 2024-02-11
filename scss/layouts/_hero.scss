@@ -14,14 +14,14 @@
     background-image:
         linear-gradient(to right,
             rgba(47, 48, 58, 0.40),
-            rgba(2, 2, 61, 0.4)),
+            rgba(47, 48, 58, 0.40)),
         url(../images/header-mob-img.jpg);
 
         @include mq (retina) {
             background-image:
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.40),
-                rgba(2, 2, 61, 0.4)),
+                rgba(47, 48, 58, 0.40)),
             url(../images/header-mob-img@2x.jpg);
         }
 
@@ -44,14 +44,14 @@
         background-image:
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.40),
-                rgba(2, 2, 61, 0.4)),
+                rgba(47, 48, 58, 0.40)),
             url(../images/header-tab-img.jpg);
 
             @include mq (retina) {
             background-image:
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.40),
-                rgba(2, 2, 61, 0.4)),
+                rgba(47, 48, 58, 0.40)),
             url(../images/header-tab-img@2x.jpg);
         }
     background-repeat: no-repeat;
@@ -73,14 +73,14 @@
         background-image:
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.40),
-                rgba(2, 2, 61, 0.4)),
+                rgba(47, 48, 58, 0.40)),
             url(../images/header-desk.jpg);
 
             @include mq (retina) {
             background-image:
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.40),
-                rgba(2, 2, 61, 0.4)),
+                rgba(47, 48, 58, 0.40)),
             url(../images/header-desk@2x.jpg);
         }
     background-repeat: no-repeat;
